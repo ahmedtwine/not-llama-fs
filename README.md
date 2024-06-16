@@ -6,7 +6,7 @@ Before getting started, ensure that you have the following prerequisites install
 - [Homebrew](https://brew.sh/)
 - [Python 3.11](https://www.python.org/downloads/)
 - [Just](https://github.com/casey/just)
-- [UV] (https://formulae.brew.sh/formula/uv)
+- [UV](https://formulae.brew.sh/formula/uv)
 
 ## Setup
 
