@@ -7,7 +7,6 @@ from not_llama_fs.producers.openai_producer import OpenAIProducer
 
 IMAGE_SUPPORT_PRODUCERS = ["ollama", "claude"]
 
-
 def demo(
         path: pathlib.Path,
         producer_name: str = "ollama",
@@ -15,6 +14,9 @@ def demo(
         image_model: str = "llava",
         apikey: str = None
 ):
+    # Expand and resolve the path to be platform-agnostic
+    path = path.expanduser().resolve()
+    
     if not path.exists():
         raise ValueError(f"Path {path} does not exist")
 
